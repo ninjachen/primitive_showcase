@@ -62,7 +62,7 @@ public class ImageController {
     }
 
     private String buildImageUrl(String fileName) {
-        return String.format("http://api.rnd.app/image/view/"+fileName);
+        return String.format("http://image.rnd.app/image/view/"+fileName);
     }
 
     private void exec(String cmd) {
