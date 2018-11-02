@@ -1,9 +1,5 @@
 package club.jijigugu.onecan.admin.controller;
 
-import club.jijigugu.onecan.admin.domain.UserReport;
-import club.jijigugu.onecan.admin.service.UserReportService;
-import org.apache.tomcat.util.http.fileupload.FileUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -27,9 +23,6 @@ import java.util.logging.Logger;
 @RequestMapping("/image")
 public class ImageController {
     static Logger logger = Logger.getLogger(ImageController.class.getName());
-
-    @Autowired
-    public UserReportService userReportService;
 
     @PostMapping("/primitive")
     public HashMap primitive(@RequestParam("file") MultipartFile file,
